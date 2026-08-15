@@ -1,7 +1,5 @@
 name: Build MyShop Apps
 
-# Runs automatically every time you push code, and can also be run manually
-# from the "Actions" tab on GitHub. No local setup needed on your computer.
 on:
   push:
     branches: [ main ]
