@@ -16,7 +16,7 @@ jobs:
           flutter-version: '3.24.0'
           channel: 'stable'
       - name: Generate Android platform files
-        run: flutter create --platforms=android --org com.myshop .
+        run: flutter create --platforms=android --project-name myshop_inventory --org com.myshop .
       - name: Add camera permission
         run: |
           sed -i 's#<manifest xmlns:android="http://schemas.android.com/apk/res/android">#<manifest xmlns:android="http://schemas.android.com/apk/res/android"><uses-permission android:name="android.permission.CAMERA" \/>#' android/app/src/main/AndroidManifest.xml
@@ -37,7 +37,7 @@ jobs:
           flutter-version: '3.24.0'
           channel: 'stable'
       - name: Generate Windows platform files
-        run: flutter create --platforms=windows --org com.myshop .
+        run: flutter create --platforms=windows --project-name myshop_inventory --org com.myshop .
       - run: flutter config --enable-windows-desktop
       - run: flutter pub get
       - run: flutter build windows --release
@@ -56,7 +56,7 @@ jobs:
           flutter-version: '3.24.0'
           channel: 'stable'
       - name: Generate macOS platform files
-        run: flutter create --platforms=macos --org com.myshop .
+        run: flutter create --platforms=macos --project-name myshop_inventory --org com.myshop .
       - run: flutter config --enable-macos-desktop
       - run: flutter pub get
       - run: flutter build macos --release
