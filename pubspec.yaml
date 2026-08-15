@@ -32,7 +32,7 @@ dependencies:
   printing: ^5.11.1
 
   # Formatting helpers (currency, dates)
-  intl: ^0.18.1
+  intl: ^0.20.3
 
   # Sharing generated invoice files
   share_plus: ^7.2.1
