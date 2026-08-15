@@ -1,0 +1,58 @@
+name: myshop_inventory
+description: Small business inventory, sales, invoicing and QR code app.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # Local database (works fully offline)
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  path_provider: ^2.1.1
+
+  # State management
+  provider: ^6.1.1
+
+  # QR code generation (for product labels)
+  qr_flutter: ^4.1.0
+
+  # QR / barcode scanning (camera based, works offline)
+  mobile_scanner: ^3.5.6
+
+  # PDF invoice generation + printing/sharing
+  pdf: ^3.10.7
+  printing: ^5.11.1
+
+  # Formatting helpers (currency, dates)
+  intl: ^0.18.1
+
+  # Sharing generated invoice files
+  share_plus: ^7.2.1
+
+  # Unique IDs for products/sales
+  uuid: ^4.2.2
+
+  # PIN hashing for staff login
+  crypto: ^3.0.3
+
+  # CSV export of sales reports
+  csv: ^5.1.1
+
+  # Local session persistence (stay logged in between app opens)
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
